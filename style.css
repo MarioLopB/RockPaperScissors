@@ -20,8 +20,40 @@ body, html {
     align-items: center;
 }
 
-img {
-    max-width: 100px;
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+#buttons {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rock-btn {
+    flex: auto;
+    max-width: 200px;
+    height: auto;
+}
+
+#paper-btn {
+    flex: auto;
+    max-width: 200px;
+    height: auto;
+}
+
+#scissors-btn {
+    flex: auto;
+    max-width: 150px;
     height: auto;
 }
 
