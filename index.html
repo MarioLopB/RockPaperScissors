@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./code.js" defer></script>
+    <link rel="stylesheet" href="./styles/">
+    <script src="../jscode/code.js" defer></script>
     <title>RockPaperScissors</title>
 </head>
 
 <body>
-    <div id="bg">
-        <div id="main">
-            <hi id="title">The Rock Paper Scissors</hi>
-            <div id="buttons">
-                <img id="rock-btn" src="./images/therock.png" alt="The Rock">
-                <img id="paper-btn" src="./images/paper.png">
-                <img id="scissors-btn" src="./images/scissors.png">
+    <div id="bg-main">
+        <div id="content">
+            <h1 id="title">Rock Paper Scissors</h1>
+            <h2 id="select">Select game mode</h2>
+            <div id="options">
+                <button onclick="window.location.replace('game.html')">NORMAL</button>
+                <button onclick="window.location.replace('therock.html')">THE ROCK</button>
             </div>
         </div>
     </div>

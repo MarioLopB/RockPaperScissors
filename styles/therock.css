@@ -9,7 +9,7 @@ body, html {
 
 #bg {
  
-    background: linear-gradient(transparent, mistyrose), url("./images/fondo.jpg");
+    background: linear-gradient(transparent, mistyrose), url("../images/fondo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
