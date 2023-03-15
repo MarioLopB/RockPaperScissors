@@ -57,7 +57,14 @@ body, html {
     height: auto;
 }
 
-button {
-    height: 40px;
-    width: 40px;
+img{
+    transition: transform 250ms;
+}
+
+img:hover {
+    transform: translateY(-20px);
+}
+
+img:active {
+    transform: scale(0.8);
 }
