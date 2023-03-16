@@ -58,8 +58,14 @@ let playGame = (playerSelection) => {
     } else if (round == 5){
         if(pointsP > pointsIA){
             roundLB.textContent = "¡HAS GANADO!";
+            if (therockBtn != null){
+                therockBtn.src = "../images/happyrock.png";
+            }
         } else if(pointsP < pointsIA){
             roundLB.textContent = "Has perdio :(";
+            if (therockBtn != null){
+                therockBtn.src = "../images/angrytherock.png";
+            }
         } else{
             roundLB.textContent = "EMPATE";
         }
