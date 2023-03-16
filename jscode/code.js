@@ -37,11 +37,11 @@ let playGame = (playerSelection) => {
 
         switch (choice) {
             case 0:
-                pointIA.textContent = "Points: " + pointsIA;
+                pointIA.textContent = "Puntos IA: " + pointsIA;
                 info.textContent = "IA gana la ronda";
                 break;
             case 1:
-                pointPlayer.textContent = "Points: " + pointsP;
+                pointPlayer.textContent = "Puntos Jugador: " + pointsP;
                 info.textContent = "Jugador gana la ronda";
                 break;
             case 2:
