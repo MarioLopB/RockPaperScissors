@@ -44,6 +44,7 @@ img {
     width: 150px;
     height: 150px;
     transition: transform 250ms;
+    cursor: pointer;
 }
 
 img:hover {
@@ -79,6 +80,7 @@ button {
     color: white;
     font-weight: bold;
     transition: transform 250ms;
+    cursor: pointer;
 }
 
 button:hover {

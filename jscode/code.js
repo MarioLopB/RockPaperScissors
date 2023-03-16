@@ -70,6 +70,15 @@ let playGame = (playerSelection) => {
             roundLB.textContent = "EMPATE";
         }
 
+        if(therockBtn!=null){
+            therockBtn.style.cursor = "not-allowed";
+        } else{
+            rockBtn.style.cursor = "not-allowed";
+        }
+
+        paperBtn.style.cursor = "not-allowed";
+        scissorsBtn.style.cursor = "not-allowed";
+
         menuBtn.style.display='block';
         resetBtn.style.display='block';
     }

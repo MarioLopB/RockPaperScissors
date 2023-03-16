@@ -69,6 +69,7 @@ html {
 
 img {
     transition: transform 250ms;
+    cursor: pointer;
 }
 
 img:hover {
@@ -103,6 +104,7 @@ button {
     font-weight: bold;
     transition: transform 250ms;
     font-family: 'Courier New', monospace;
+    cursor: pointer;
 }
 
 button:hover {
