@@ -82,5 +82,9 @@ button {
 }
 
 button:hover {
-    transform: translateY(-10);
+    transform: translateY(-10px);
+}
+
+button:active {
+    transform: scale(0.8);
 }

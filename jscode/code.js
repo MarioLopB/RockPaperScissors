@@ -5,10 +5,15 @@ const roundLB = document.getElementById("round");
 const pointPlayer = document.getElementById("point-player");
 const pointIA = document.getElementById("point-ia");
 const info = document.getElementById("info");
+const menuBtn = document.getElementById("menu-btn");
+const resetBtn = document.getElementById("reset-btn");
 
 let round = 1;
 let pointsP = 0;
 let pointsIA = 0;
+
+menuBtn.style.display='none';
+resetBtn.style.display='none';
 
 let playRound = (playerSelection) => {
     let computerSelection = getComputerChoice();
@@ -57,6 +62,9 @@ let playGame = (playerSelection) => {
         } else{
             roundLB.textContent = "EMPATE";
         }
+
+        menuBtn.style.display='block';
+        resetBtn.style.display='block';
     }
 }
 
