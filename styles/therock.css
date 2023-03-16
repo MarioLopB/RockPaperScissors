@@ -3,30 +3,35 @@
     padding: 0;
 }
 
-body, html {
+body,
+html {
     height: 100%;
 }
 
 #bg {
- 
+
     background: linear-gradient(transparent, mistyrose), url("../images/fondo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 140px;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 50px
 }
 
-#title{
+#title {
     text-align: center;
     font-size: 60px;
     margin-bottom: 40px;
@@ -37,27 +42,30 @@ body, html {
     height: 200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    gap: 70px;
 }
 
 #rock-btn {
     flex: auto;
-    max-width: 200px;
-    height: auto;
+    max-width: 250px;
+    height: 250px;
 }
 
 #paper-btn {
     flex: auto;
-    max-width: 200px;
-    height: auto;
+    max-width: 250px;
+    height: 250px;
 }
 
 #scissors-btn {
     flex: auto;
-    max-width: 150px;
-    height: auto;
+    max-width: 200px;
+    height: 300px;
 }
 
-img{
+img {
     transition: transform 250ms;
 }
 
@@ -66,5 +74,38 @@ img:hover {
 }
 
 img:active {
+    transform: scale(0.8);
+}
+
+#count {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#options {
+    display: flex;
+    gap: 120px;
+}
+
+button {
+    background: #1A1A1D;
+    width: 200px;
+    height: 50px;
+    border: transparent;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    transition: transform 250ms;
+}
+
+button:hover {
+    transform: translateY(-10px);
+}
+
+button:active {
     transform: scale(0.8);
 }

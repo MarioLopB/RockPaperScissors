@@ -50,7 +50,7 @@ let playGame = (playerSelection) => {
                 info.textContent = "Jugador gana la ronda";
                 break;
             case 2:
-                info.textContent = "Ronda empada"
+                info.textContent = "Ronda empatada"
         }
 
         roundLB.textContent = "Ronda " + round;
