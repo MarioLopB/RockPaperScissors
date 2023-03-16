@@ -7,6 +7,7 @@ const pointIA = document.getElementById("point-ia");
 const info = document.getElementById("info");
 const menuBtn = document.getElementById("menu-btn");
 const resetBtn = document.getElementById("reset-btn");
+const therockBtn = document.getElementById("therock-btn");
 
 let round = 1;
 let pointsP = 0;
@@ -87,9 +88,17 @@ let getComputerChoice = () => {
     return choice;
 }
 
-rockBtn.addEventListener('click', (event) => {
-    playGame("rock");
-});
+if (therockBtn != null){
+    therockBtn.addEventListener('click', (event) => {
+        playGame("rock");
+    });
+}
+
+if (rockBtn != null){
+    rockBtn.addEventListener('click', (event) => {
+        playGame("rock");
+    });
+}
 
 paperBtn.addEventListener('click', (event) => {
     playGame("paper");
